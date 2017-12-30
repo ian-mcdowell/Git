@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Git</string>
+	<key>url</key>
+	<string>https://github.com/IMcD23/Git.git</string>
+	<key>dependencies</key>
+	<array>
+		<dict>
+			<key>url</key>
+			<string>https://github.com/IMcD23/libgit2-ios.git</string>
+			<key>branch</key>
+			<string>master</string>
+		</dict>
+	</array>
+	<key>buildSystem</key>
+	<string>none</string>
+</dict>
+</plist>
