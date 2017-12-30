@@ -75,11 +75,11 @@
 		3CB477D21FF7A7F900C6B265 /* Data+Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Git.swift"; sourceTree = "<group>"; };
 		3CB477D31FF7A7F900C6B265 /* Date+Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Git.swift"; sourceTree = "<group>"; };
 		3CB477D41FF7A7F900C6B265 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
-		3CB477ED1FF7A97C00C6B265 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = .ibuild/build/lib/libgit2.a; sourceTree = SOURCE_ROOT; };
-		3CB477EF1FF7A98200C6B265 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = .ibuild/build/lib/libcrypto.a; sourceTree = SOURCE_ROOT; };
-		3CB477F01FF7A98200C6B265 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = .ibuild/build/lib/libssl.a; sourceTree = SOURCE_ROOT; };
-		3CB477F11FF7A98200C6B265 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = .ibuild/build/lib/libssh2.a; sourceTree = SOURCE_ROOT; };
-		3CB477F21FF7A98200C6B265 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = .ibuild/build/lib/libcurl.a; sourceTree = SOURCE_ROOT; };
+		3CB477ED1FF7A97C00C6B265 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = "../Debug-iphonesimulator/lib/libgit2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB477EF1FF7A98200C6B265 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../Debug-iphonesimulator/lib/libcrypto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB477F01FF7A98200C6B265 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../Debug-iphonesimulator/lib/libssl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB477F11FF7A98200C6B265 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = "../Debug-iphonesimulator/lib/libssh2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB477F21FF7A98200C6B265 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../Debug-iphonesimulator/lib/libcurl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,14 +500,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/.ibuild/build/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/ibuild/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.Git;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.ibuild/build/libgit2-ios";
+				SWIFT_INCLUDE_PATHS = "$(TARGET_BUILD_DIR)/ibuild/libgit2-ios";
 			};
 			name = Debug;
 		};
@@ -521,14 +518,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/.ibuild/build/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/ibuild/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.Git;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/.ibuild/build/libgit2-ios";
+				SWIFT_INCLUDE_PATHS = "$(TARGET_BUILD_DIR)/ibuild/libgit2-ios";
 			};
 			name = Release;
 		};
