@@ -505,7 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.Git;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(TARGET_BUILD_DIR)/ibuild/libgit2-ios";
+				SWIFT_INCLUDE_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild/libgit2-ios";
 			};
 			name = Debug;
 		};
@@ -524,7 +524,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.Git;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(TARGET_BUILD_DIR)/ibuild/libgit2-ios";
+				SWIFT_INCLUDE_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild/libgit2-ios";
 			};
 			name = Release;
 		};
