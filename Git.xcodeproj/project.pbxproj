@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C7CD4451FFA47700049E5FE /* ibuild_search_paths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ibuild_search_paths.xcconfig; path = Submodules/ibuild/ibuild_search_paths.xcconfig; sourceTree = "<group>"; };
 		3CB477A51FF7A6FC00C6B265 /* Git.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Git.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB477A81FF7A6FC00C6B265 /* Git.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Git.h; sourceTree = "<group>"; };
 		3CB477A91FF7A6FC00C6B265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +110,7 @@
 		3CB4779B1FF7A6FC00C6B265 = {
 			isa = PBXGroup;
 			children = (
+				3C7CD4451FFA47700049E5FE /* ibuild_search_paths.xcconfig */,
 				3CB477C11FF7A7F900C6B265 /* Sources */,
 				3CB477A71FF7A6FC00C6B265 /* Framework */,
 				3CB477B21FF7A6FC00C6B265 /* Tests */,
@@ -492,6 +494,7 @@
 		};
 		3CB477BA1FF7A6FC00C6B265 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7CD4451FFA47700049E5FE /* ibuild_search_paths.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
@@ -501,16 +504,16 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.Git;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild/libgit2-ios";
+				SWIFT_INCLUDE_PATHS = "$(IBUILD_CURRENT_BUILD_ROOT)/libgit2-ios";
 			};
 			name = Debug;
 		};
 		3CB477BB1FF7A6FC00C6B265 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7CD4451FFA47700049E5FE /* ibuild_search_paths.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
@@ -520,11 +523,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.Git;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild/libgit2-ios";
+				SWIFT_INCLUDE_PATHS = "$(IBUILD_CURRENT_BUILD_ROOT)/libgit2-ios";
 			};
 			name = Release;
 		};

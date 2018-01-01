@@ -4,18 +4,32 @@
 <dict>
 	<key>name</key>
 	<string>Git</string>
-	<key>url</key>
-	<string>https://github.com/IMcD23/Git.git</string>
+	<key>build</key>
+	<dict>
+		<key>buildSystem</key>
+		<string>xcode</string>
+		<key>buildArgs</key>
+		<array>
+			<string>-project</string>
+			<string>Git.xcodeproj</string>
+			<string>-target</string>
+			<string>Git</string>
+		</array>
+		<key>outputs</key>
+		<array>
+			<string>Git.framework</string>
+		</array>
+	</dict>
 	<key>dependencies</key>
 	<array>
 		<dict>
-			<key>url</key>
-			<string>https://github.com/IMcD23/libgit2-ios.git</string>
+			<key>type</key>
+			<string>github</string>
+			<key>path</key>
+			<string>IMcD23/libgit2-ios</string>
 			<key>branch</key>
 			<string>master</string>
 		</dict>
 	</array>
-	<key>buildSystem</key>
-	<string>none</string>
 </dict>
 </plist>
