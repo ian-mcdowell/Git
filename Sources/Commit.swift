@@ -128,16 +128,20 @@ public class Commit {
     
     /// Get the committer of a commit.
     /// - See: git_commit_committer
-    public var committer: Signature {
-        let committer = git_commit_committer(self.commit)
-        return Signature(signature: committer!)
+    public var committer: Signature? {
+        if let committer = git_commit_committer(self.commit) {
+            return Signature(signature: committer)
+        }
+        return nil
     }
     
     /// Get the author of a commit.
     /// - See: git_commit_author
-    public var author: Signature {
-        let author = git_commit_author(self.commit)
-        return Signature(signature: author!)
+    public var author: Signature? {
+        if let author = git_commit_author(self.commit) {
+            return Signature(signature: author)
+        }
+        return nil
     }
     
     /// Get the full raw text of the commit header.

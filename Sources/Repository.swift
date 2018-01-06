@@ -179,6 +179,12 @@ public class Repository {
     }
 }
 
+extension Repository: Equatable {
+    public static func ==(a: Repository, b: Repository) -> Bool {
+        return a.workingDirectory == b.workingDirectory
+    }
+}
+
 // MARK: Branches
 /// - See: git2/branch.h
 public extension Repository {

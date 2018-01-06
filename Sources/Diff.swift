@@ -50,6 +50,10 @@ public class Diff {
     
     // TODO: Other init
     // TODO: get deltas
+    
+    public func deltas() throws -> [DiffDelta] {
+        return [] // TODO
+    }
 }
 
 /// Description of changes to one entry.
