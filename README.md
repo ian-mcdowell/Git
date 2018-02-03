@@ -1,10 +1,10 @@
 # Git
 
 <p align="center">
-  <b>Git</b> &bull;
-  <a href="https://github.com/IMcD23/InputAssistant">InputAssistant</a> &bull;
+  <a href="https://github.com/IMcD23/TiltedTabView">TiltedTabView</a> &bull;
   <a href="https://github.com/IMcD23/TabView">TabView</a> &bull;
-  <a href="https://github.com/IMcD23/TiltedTabView">TiltedTabView</a>
+  <a href="https://github.com/IMcD23/InputAssistant">InputAssistant</a> &bull;
+  <b>Git</b>
 </p>
 
 --------
