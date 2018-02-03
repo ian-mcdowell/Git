@@ -21,6 +21,7 @@ Wrapper around libgit2, written in Swift
 # Requirements
 
 * Xcode 9 or later
+* iOS 11.0 or later
 
 # Usage
 

@@ -29,7 +29,7 @@ Wrapper around libgit2, written in Swift
                    DESC
 
   s.homepage     = "https://github.com/IMcD23/Git"
-  s.screenshots  = 
+  s.screenshots  = ""
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,7 +63,7 @@ Wrapper around libgit2, written in Swift
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "11.0"
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -79,7 +79,7 @@ Wrapper around libgit2, written in Swift
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/IMcD23/InputAssistant.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/IMcD23/Git.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
