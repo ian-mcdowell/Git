@@ -99,15 +99,18 @@ public class Branch: Reference {
             }
             return nil
         }
-        set {
-            let name: String?
-            if let newValue = newValue, newValue.isRemoteBranch {
-                name = newValue.name.replacingOccurrences(of: "refs/remotes/", with: "")
-            } else {
-                name = newValue?.shortBranchName
-            }
-            try? git_try { git_branch_set_upstream(self.reference, name?.cString(using: .utf8)) }
+    }
+    
+    /// Set the reference supporting the remote tracking branch, given that this is a local branch.
+    /// - See: git_branch_set_upstream
+    public func setUpstream(_ upstream: Branch?) throws {
+        let name: String?
+        if let upstream = upstream, upstream.isRemoteBranch {
+            name = upstream.name.replacingOccurrences(of: "refs/remotes/", with: "")
+        } else {
+            name = upstream?.shortBranchName
         }
+        try git_try { git_branch_set_upstream(self.reference, name?.cString(using: .utf8)) }
     }
     
     /// The upstream configuration for the local branch
@@ -119,9 +122,10 @@ public class Branch: Reference {
             }
             return nil
         }
-        set {
-            try? git_try { git_branch_set_upstream(self.reference, newValue?.cString(using: .utf8)) }
-        }
+    }
+    
+    public func setUpstreamName(_ upstreamName: String?) throws {
+        try git_try { git_branch_set_upstream(self.reference, upstreamName?.cString(using: .utf8)) }
     }
     
     /// Return the name of remote that the remote tracking branch belongs to.

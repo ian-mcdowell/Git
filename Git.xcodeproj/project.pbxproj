@@ -26,12 +26,15 @@
 		3CB477E21FF7A7F900C6B265 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB477D01FF7A7F900C6B265 /* Status.swift */; };
 		3CB477E31FF7A7F900C6B265 /* Data+Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB477D21FF7A7F900C6B265 /* Data+Git.swift */; };
 		3CB477E41FF7A7F900C6B265 /* Date+Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB477D31FF7A7F900C6B265 /* Date+Git.swift */; };
-		3CB477E51FF7A7F900C6B265 /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB477D41FF7A7F900C6B265 /* Git.swift */; };
+		3CB477E51FF7A7F900C6B265 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB477D41FF7A7F900C6B265 /* Errors.swift */; };
 		3CB477EE1FF7A97C00C6B265 /* libgit2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB477ED1FF7A97C00C6B265 /* libgit2.a */; };
 		3CB477F31FF7A98200C6B265 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB477EF1FF7A98200C6B265 /* libcrypto.a */; };
 		3CB477F41FF7A98200C6B265 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB477F01FF7A98200C6B265 /* libssl.a */; };
 		3CB477F51FF7A98200C6B265 /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB477F11FF7A98200C6B265 /* libssh2.a */; };
 		3CB477F61FF7A98200C6B265 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB477F21FF7A98200C6B265 /* libcurl.a */; };
+		3CE064A3200DD95C00680549 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE064A2200DD95C00680549 /* libz.tbd */; };
+		3CE064A5200DDA1000680549 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE064A4200DDA1000680549 /* libiconv.tbd */; };
+		B0F362A820003427007466AE /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F362A720003427007466AE /* Git.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,12 +78,15 @@
 		3CB477D01FF7A7F900C6B265 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		3CB477D21FF7A7F900C6B265 /* Data+Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Git.swift"; sourceTree = "<group>"; };
 		3CB477D31FF7A7F900C6B265 /* Date+Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Git.swift"; sourceTree = "<group>"; };
-		3CB477D41FF7A7F900C6B265 /* Git.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
+		3CB477D41FF7A7F900C6B265 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		3CB477ED1FF7A97C00C6B265 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = "../Debug-iphonesimulator/lib/libgit2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB477EF1FF7A98200C6B265 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../Debug-iphonesimulator/lib/libcrypto.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB477F01FF7A98200C6B265 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../Debug-iphonesimulator/lib/libssl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB477F11FF7A98200C6B265 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = "../Debug-iphonesimulator/lib/libssh2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB477F21FF7A98200C6B265 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../Debug-iphonesimulator/lib/libcurl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE064A2200DD95C00680549 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3CE064A4200DDA1000680549 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		B0F362A720003427007466AE /* Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE064A5200DDA1000680549 /* libiconv.tbd in Frameworks */,
+				3CE064A3200DD95C00680549 /* libz.tbd in Frameworks */,
 				3CB477EE1FF7A97C00C6B265 /* libgit2.a in Frameworks */,
 				3CB477F31FF7A98200C6B265 /* libcrypto.a in Frameworks */,
 				3CB477F41FF7A98200C6B265 /* libssl.a in Frameworks */,
@@ -149,6 +157,7 @@
 		3CB477C11FF7A7F900C6B265 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B0F362A720003427007466AE /* Git.swift */,
 				3CB477C21FF7A7F900C6B265 /* Remote.swift */,
 				3CB477C31FF7A7F900C6B265 /* Reference.swift */,
 				3CB477C41FF7A7F900C6B265 /* Index.swift */,
@@ -181,7 +190,7 @@
 			children = (
 				3CB477D21FF7A7F900C6B265 /* Data+Git.swift */,
 				3CB477D31FF7A7F900C6B265 /* Date+Git.swift */,
-				3CB477D41FF7A7F900C6B265 /* Git.swift */,
+				3CB477D41FF7A7F900C6B265 /* Errors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -189,6 +198,8 @@
 		3CB477EC1FF7A97B00C6B265 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CE064A4200DDA1000680549 /* libiconv.tbd */,
+				3CE064A2200DD95C00680549 /* libz.tbd */,
 				3CB477EF1FF7A98200C6B265 /* libcrypto.a */,
 				3CB477F21FF7A98200C6B265 /* libcurl.a */,
 				3CB477F11FF7A98200C6B265 /* libssh2.a */,
@@ -338,13 +349,14 @@
 				3CB477D61FF7A7F900C6B265 /* Reference.swift in Sources */,
 				3CB477DB1FF7A7F900C6B265 /* OID.swift in Sources */,
 				3CB477E41FF7A7F900C6B265 /* Date+Git.swift in Sources */,
+				B0F362A820003427007466AE /* Git.swift in Sources */,
 				3CB477DC1FF7A7F900C6B265 /* Signature.swift in Sources */,
 				3CB477D91FF7A7F900C6B265 /* Branch.swift in Sources */,
 				3CB477E31FF7A7F900C6B265 /* Data+Git.swift in Sources */,
 				3CB477D81FF7A7F900C6B265 /* Diff.swift in Sources */,
 				3CB477E21FF7A7F900C6B265 /* Status.swift in Sources */,
 				3CB477D71FF7A7F900C6B265 /* Index.swift in Sources */,
-				3CB477E51FF7A7F900C6B265 /* Git.swift in Sources */,
+				3CB477E51FF7A7F900C6B265 /* Errors.swift in Sources */,
 				3CB477E01FF7A7F900C6B265 /* Tree.swift in Sources */,
 				3CB477DD1FF7A7F900C6B265 /* Repository.swift in Sources */,
 				3CB477DF1FF7A7F900C6B265 /* StrArray.swift in Sources */,
@@ -425,7 +437,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBUILD_DEPENDENCIES_ONLY = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -482,7 +494,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBUILD_DEPENDENCIES_ONLY = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
