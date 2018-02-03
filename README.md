@@ -17,6 +17,7 @@ Wrapper around libgit2, written in Swift
 [![Contact](https://img.shields.io/badge/contact-%40ian__mcdowell-3a8fc1.svg)](https://twitter.com/ian_mcdowell)
 
 
+
 # Requirements
 
 * Xcode 9 or later
