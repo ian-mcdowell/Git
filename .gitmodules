@@ -1,4 +1,0 @@
-[submodule "Submodules/ibuild"]
-	path = Submodules/ibuild
-	url = https://github.com/IMcD23/ibuild.git
-	branch = master
