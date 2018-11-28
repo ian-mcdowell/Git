@@ -55,7 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3C7CD4451FFA47700049E5FE /* ibuild_search_paths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ibuild_search_paths.xcconfig; path = Submodules/ibuild/ibuild_search_paths.xcconfig; sourceTree = "<group>"; };
+		3C7CD4451FFA47700049E5FE /* ibuild_search_paths.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ibuild_search_paths.xcconfig; path = /usr/local/opt/ibuild/libexec/ibuild_search_paths.xcconfig; sourceTree = "<absolute>"; };
 		3CB477A51FF7A6FC00C6B265 /* Git.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Git.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB477A81FF7A6FC00C6B265 /* Git.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Git.h; sourceTree = "<group>"; };
 		3CB477A91FF7A6FC00C6B265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 			buildConfigurationList = 3CB477E71FF7A8A500C6B265 /* Build configuration list for PBXLegacyTarget "libgit2" */;
 			buildPhases = (
 			);
-			buildToolPath = "$(SRCROOT)/Submodules/ibuild/ibuild";
+			buildToolPath = /usr/local/bin/ibuild;
 			buildWorkingDirectory = "$(SRCROOT)";
 			dependencies = (
 			);
@@ -521,7 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.Git;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(IBUILD_CURRENT_BUILD_ROOT)/libgit2-ios";
+				SWIFT_INCLUDE_PATHS = "$(IBUILD_CURRENT_BUILD_ROOT)/include/libgit2";
 			};
 			name = Debug;
 		};
@@ -540,7 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.Git;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(IBUILD_CURRENT_BUILD_ROOT)/libgit2-ios";
+				SWIFT_INCLUDE_PATHS = "$(IBUILD_CURRENT_BUILD_ROOT)/include/libgit2";
 			};
 			name = Release;
 		};

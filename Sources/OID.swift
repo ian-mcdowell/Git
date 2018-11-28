@@ -1,4 +1,4 @@
-import git2
+import libgit2
 import Foundation
 
 /// Git object id
@@ -30,7 +30,7 @@ public class OID {
         let buffer = UnsafeMutablePointer<Int8>.allocate(capacity: 8)
         git_oid_tostr(buffer, 8, &self.oid)
         let str = String(cString: buffer)
-        buffer.deallocate(capacity: 8)
+        buffer.deallocate()
         return str
     }
     

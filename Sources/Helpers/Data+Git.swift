@@ -1,4 +1,4 @@
-import git2
+import libgit2
 import Foundation
 
 extension Data {

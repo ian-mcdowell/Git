@@ -1,4 +1,4 @@
-import git2
+import libgit2
 import Foundation
 
 internal typealias git_commit = OpaquePointer
@@ -39,7 +39,7 @@ public class Commit {
         let oid = OID()
         try git_try("create commit in repository") { git_commit_create(&oid.oid, repository.repository, updateRef?.cString(using: .utf8), author.signature, committer.signature, messageEncoding.cString(using: .utf8), message.cString(using: .utf8), tree.tree, parents.count, parentCommits) }
         
-        parentCommits.deallocate(capacity: parents.count)
+        parentCommits.deallocate()
         
         return try Commit(repository: repository, oid: oid)
     }

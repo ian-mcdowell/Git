@@ -1,4 +1,4 @@
-import git2
+import libgit2
 import Foundation
 
 /// Try to execute a method, and throw if git returns a non-zero status code
@@ -39,7 +39,7 @@ internal func git_try(_ action: String? = nil, _ method: (UnsafeMutablePointer<g
         throw GitError.create(action)
     }
     let data = try Data.fromBuffer(buffer: &buf)
-    git_buf_free(&buf)
+    git_buf_dispose(&buf)
     return data
 }
 
